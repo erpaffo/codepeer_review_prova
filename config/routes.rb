@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  root 'snippets#index'  # Imposta la pagina degli snippet come homepage
+  resources :snippets 
 end

@@ -68,3 +68,8 @@ group :test do
 end
 
 gem 'devise'
+
+# Installiamo rspec per testare i modelli e i controller
+gem 'rspec-rails'
+
+gem 'webpacker'
