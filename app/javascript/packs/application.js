@@ -1,18 +1,19 @@
-/* eslint no-console:0 */
-// This file is automatically compiled by Webpack, along with any other files
-// present in this directory. You're encouraged to place your actual application logic in
-// a relevant structure within app/javascript and only use these pack files to reference
-// that code so it'll be compiled.
-//
-// To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
-// layout file, like app/views/layouts/application.html.erb
-
-
-// Uncomment to copy all static images under ../images to the output folder and reference
-// them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
-// or the `imagePath` JavaScript helper below.
-//
-// const images = require.context('../images', true)
-// const imagePath = (name) => images(name, true)
-
-console.log('Hello World from Webpacker')
+document.addEventListener("DOMContentLoaded", function() {
+    // Example of simple form validation
+    document.querySelector('.signup-button').addEventListener('click', function(event) {
+      const emailInput = document.querySelector('.email-input');
+      if (!emailInput.value.includes('@')) {
+        event.preventDefault(); // Stop the form from submitting
+        alert('Please enter a valid email address.');
+        emailInput.focus();
+      }
+    });
+  
+    // Example of toggling content
+    document.querySelectorAll('.info-block').forEach(block => {
+      block.addEventListener('click', function() {
+        this.classList.toggle('expanded');
+      });
+    });
+  });
+  

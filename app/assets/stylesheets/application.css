@@ -1,5 +1,120 @@
+/* Base styles */
+.landing-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.header img {
+    width: 100px; /* Adjust based on your logo */
+}
+
+.header h1 {
+    color: #333;
+    font-size: 2em; /* Larger font size for header */
+}
+
+/* Input and Button Enhancements */
+.email-register input[type="email"] {
+    margin: 10px 0;
+    padding: 15px; /* More padding for better visual */
+    width: 300px; /* Increase width for better readability */
+    border: 1px solid #ccc; /* Added border for better definition */
+    border-radius: 4px; /* Rounded corners for modern look */
+}
+
+.email-register button {
+    padding: 12px 25px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold; /* Make text bold */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.email-register button:hover {
+    background-color: #0056b3;
+}
+
+/* Additional Styles for Better Layout */
+.site-info p {
+    color: #666;
+    width: 80%;
+    margin: 20px auto;
+    font-size: 16px; /* Slightly larger font for readability */
+    padding: 10px; /* Padding for better text block appearance */
+    background-color: #fff; /* White background for the text block */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #FF5733; /* A brighter shade of red */
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.auth-form {
+    max-width: 360px;
+    padding: 20px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  
+  .auth-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .field {
+    margin-bottom: 10px;
+  }
+  
+  .field label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .field input[type="email"], .field input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .actions {
+    margin-top: 20px;
+  }
+  
+  .actions input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .actions input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+
 /*
  *= require_tree .
- *= require snippets
  *= require_self
  */
