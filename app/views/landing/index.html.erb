@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CodePeer Review</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag 'landing', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+  <main>
+    <div class="landing-page">
+      <h1>Benvenuto in CodePeer Review</h1>
+      <p>Una piattaforma per la revisione di codice tra pari destinata agli studenti di informatica.</p>
+      <div class="email-signup">
+        <%= form_with url: new_user_registration_path, method: :get, local: true do %>
+          <%= label_tag :email, 'Inserisci la tua email per iniziare:' %>
+          <%= email_field_tag :email, nil, placeholder: 'Email' %>
+          <%= submit_tag 'Registrati' %>
+        <% end %>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

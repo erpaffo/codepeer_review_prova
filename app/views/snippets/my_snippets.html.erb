@@ -1,0 +1,10 @@
+<h1>I miei Snippets</h1>
+<% if @snippets.any? %>
+  <ul>
+    <% @snippets.each do |snippet| %>
+      <li><%= link_to snippet.title, snippet_path(snippet) %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>Non hai ancora caricato nessuno snippet.</p>
+<% end %>

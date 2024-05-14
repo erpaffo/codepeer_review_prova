@@ -1,0 +1,30 @@
+<h1>Edit Snippet</h1>
+
+<%= form_with(model: @snippet, local: true) do |form| %>
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :code %>
+    <div id="editor" style="width: 600px; height: 300px;"><%= @snippet.code %></div>
+    <%= form.hidden_field :code, id: 'code' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+<script>
+  var editor = ace.edit("editor");
+  editor.setTheme("ace/theme/monokai");
+  editor.session.setMode("ace/mode/ruby");
+  editor.session.setValue(document.getElementById('code').value);
+
+  // Update hidden form field to ensure the code is submitted
+  editor.session.on('change', function(){
+    document.getElementById('code').value = editor.session.getValue();
+  });
+</script>

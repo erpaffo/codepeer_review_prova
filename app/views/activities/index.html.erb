@@ -1,0 +1,10 @@
+<h1>Attività della Community</h1>
+<ul>
+  <% @activities.each do |activity| %>
+    <li>
+      <%= activity.user.email %> ha <%= activity.action %> 
+      <%= link_to activity.trackable_type.downcase, activity.trackable %>
+      <small><%= time_ago_in_words(activity.created_at) %> fa</small>
+    </li>
+  <% end %>
+</ul>

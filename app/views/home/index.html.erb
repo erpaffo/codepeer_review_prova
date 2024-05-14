@@ -1,0 +1,17 @@
+<!-- app/views/home/index.html.erb -->
+<div class="container">
+  <header>
+    <%= render 'layouts/navigation' %>
+  </header>
+  <main>
+    <h1>Welcome to Codepeer Review</h1>
+    <p>Get started by signing up or log in to access your projects.</p>
+    <<%= form_with url: new_user_registration_path, local: true do |form| %>
+        <%= form.email_field :email, placeholder: "Enter your email" %>
+        <%= form.submit "Sign Up" %>
+    <% end %>
+  </main>
+  <footer>
+    <p>© 2024 Codepeer Review. All rights reserved.</p>
+  </footer>
+</div>

@@ -1,0 +1,88 @@
+/* app/assets/stylesheets/landing.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .landing-page {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .landing-page h1 {
+    font-size: 2.5em;
+    color: #333;
+  }
+  
+  .landing-page p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  .email-signup {
+    margin-top: 20px;
+  }
+  
+  .email-signup form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .email-signup input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
+  }
+  
+  .email-signup input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .email-signup input[type="submit"]:hover {
+    background-color: #4cae4c;
+  }
+  

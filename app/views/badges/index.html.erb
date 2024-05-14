@@ -1,0 +1,7 @@
+<h1>Badges</h1>
+<%= link_to 'Nuovo Badge', new_badge_path %>
+<ul>
+  <% @badges.each do |badge| %>
+    <li><%= link_to badge.name, badge_path(badge) %></li>
+  <% end %>
+</ul>
